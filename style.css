@@ -74,11 +74,17 @@ p{
 }
 
 ul{
-  margin-top:3rem;
+  margin-top:2rem;
   list-style: none;
   padding:0;
   display:flex;
   gap: .5rem;
   justify-content: center;
 
+}
+
+.imageDo{
+  margin-top:1.5rem;
+  width:5rem;
+  
 }
