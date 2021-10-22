@@ -26,6 +26,9 @@ main{
   height: 43.75rem;
 }
 .card{
+  transform-style: preserve-3d;
+  transition: all 0.75s ease-out;
+
   max-width: 15.625rem;
   margin: auto;
   text-align: center;
@@ -37,6 +40,8 @@ main{
   width:10rem;
   margin: 11.5rem auto 0;
   position: relative;
+  transition: all 0.75s ease-out;
+
 }
 .imagesCard span{
   position:absolute;
@@ -75,6 +80,7 @@ a {
 
 p{
   margin-top:2rem;
+  
 }
 
 ul{

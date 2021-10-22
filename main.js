@@ -1,3 +1,30 @@
+//Animation
+
+//Movimento de animação
+const card = document.querySelector('.card')
+const container = document.querySelector('.container')
+//Definir constante
+const imagesCard = document.querySelector('.imagesCard')
+
+//Evento de movimentar animação
+container.addEventListener('mousemove', (e) => {
+	let xAxis = (window.innerWidth / 2 - e.pageX) / 25
+	let yAxis = (window.innerHeight / 2 - e.pageY) / 25
+	card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+})
+//Animar dentro
+container.addEventListener('mouseenter', (e) => {
+	//Movimentar imagem
+	imagesCard.style.transform = 'translateZ(100px) rotateZ(0deg)'
+})
+//Animar fora
+container.addEventListener('mouseleave', (e) => {
+	card.style.transition = 'all 0.7s ease'
+	card.style.transform = `rotateY(10deg) rotateX(0deg)`
+	//Voltar
+	imagesCard.style.transform = 'translateZ(0px) rotateZ(0deg)'
+})
+
 const linksSocialMedia = {
 	github: 'gfmachad',
 	linkedin: 'guilherme-fritzen-machado',
@@ -14,7 +41,6 @@ function changeSocialMediaLinks() {
 		);
 		console.log(social)
 	}
-	// userName.textContent = 'Guilherme Machado'
 }
 changeSocialMediaLinks()
 
