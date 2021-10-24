@@ -39,7 +39,6 @@ function changeSocialMediaLinks() {
 				? (li.children[0].href = `https://www.${social}.com/in/${linksSocialMedia[social]}`)
 				: (li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`)
 		);
-		console.log(social)
 	}
 }
 changeSocialMediaLinks()
